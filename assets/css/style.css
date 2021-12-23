@@ -112,3 +112,99 @@ button{
 .goyang{
     animation: ninjawiggle .75s infinite;
 }
+
+.skor{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 200;
+    transform: translateY(-50%);
+    padding: 30px 15px;
+    background: #7879b9;
+    color: #fff;
+    font-size: 2em;
+    border: solid 3px #6869a1;
+    border-left: none;
+    border-radius: 0 30px 30px 0;
+    box-shadow: 0 5px 10px #aaa;
+}
+
+.skor span{
+    display: block;
+    padding-bottom: 20px;
+    cursor: help;
+}
+
+.skor span+span{
+    padding:20px 0 0;
+    border-top: solid 1px #ddd;
+}
+
+.skor .skor-ken, 
+.skor .skor-player{
+    font-weight: bold;
+}
+
+.pilih{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    z-index: 150;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 10px 30px 15px;
+    white-space: nowrap;
+    background: #89e6d1;
+    border-top: solid 5px #7accb9;
+}
+
+.pilih button{
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 8px 0 #aaa;
+}
+
+.pilih button.disabled{
+    filter: grayscale(100%);
+}
+
+.pilih button+button{
+    margin-left: 10px;
+}
+
+.pilih button:active{
+    transform: translateY(8px);
+    box-shadow: none;
+}
+
+.pilih #batu{
+    background: url('../images/player-batu.png') center center no-repeat;
+    background-size: contain;
+}
+
+.pilih #gunting{
+    background: url('../images/player-gunting.png') center center no-repeat;
+    background-size: contain;
+}
+
+.pilih #kertas{
+    background: url('../images/player-kertas.png') center center no-repeat;
+    background-size: contain;
+}
+
+#reset{
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 100;
+    padding: 10px 20px;
+    line-height: 1em;
+    color: #6869a1;
+    font-size: .8em;
+    border: dashed 2px #6869a1;
+    border-radius: 50px;
+}
