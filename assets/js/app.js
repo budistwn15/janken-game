@@ -122,5 +122,5 @@ function result(who){
     timeOut = setTimeout(() => {
         ken.style.removeProperty("background-image");
         ken.classList.add("goyang");
-    }, 3000);
+    }, 500);
 }
